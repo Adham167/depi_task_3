@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ButtonBuildWidget extends StatelessWidget {
@@ -21,7 +20,10 @@ class ButtonBuildWidget extends StatelessWidget {
       child: Center(
         child: Text(
           text,
-          style: TextStyle(color: isGred ? Colors.white : Colors.black),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: isGred ? Colors.white : Colors.black,
+          ),
         ),
       ),
     );

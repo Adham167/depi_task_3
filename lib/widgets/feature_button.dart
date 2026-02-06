@@ -1,4 +1,3 @@
-
 import 'package:depi_task_3/widgets/button_build_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +9,7 @@ class FeatureButton extends StatefulWidget {
 }
 
 class _FeatureButtonState extends State<FeatureButton> {
-  bool isGerd = true;
+  bool isGerd = false;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

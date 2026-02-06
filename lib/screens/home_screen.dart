@@ -7,7 +7,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFFAFAFA),
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Color(0xFFFAFAFA),
+
+        surfaceTintColor: Colors.transparent,
+        scrolledUnderElevation: 0,
         title: Text(
           "Food Delivery",
           style: TextStyle(fontWeight: FontWeight.bold),
