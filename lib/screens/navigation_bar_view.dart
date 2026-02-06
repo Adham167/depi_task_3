@@ -33,7 +33,10 @@ class _NavigationBarViewState extends State<NavigationBarView> {
             icon: Icon(Icons.shopping_cart),
             label: " Cart",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: " Profile"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_outlined),
+            label: " Profile",
+          ),
         ],
       ),
       body: screensList[selectedIndex],
