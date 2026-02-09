@@ -1,4 +1,3 @@
-
 import 'package:depi_task_3/models/product_model.dart';
 import 'package:flutter/material.dart';
 
@@ -14,14 +13,16 @@ class ProductCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              height: 140,
-              width: 140,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24),
-                image: DecorationImage(
-                  image: AssetImage(productModel.image),
-                  fit: BoxFit.cover,
+            Expanded(
+              child: Center(
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                    image: DecorationImage(
+                      image: AssetImage(productModel.image),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
               ),
             ),

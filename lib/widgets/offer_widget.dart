@@ -9,14 +9,15 @@ class OfferWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          height: 150,
-          width: 300,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
-            image: DecorationImage(
-              image: AssetImage(offerModel.image),
-              fit: BoxFit.cover,
+        Expanded(
+          child: Container(
+            width: 300,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(24),
+              image: DecorationImage(
+                image: AssetImage(offerModel.image),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
         ),
