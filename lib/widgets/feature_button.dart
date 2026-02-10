@@ -1,5 +1,7 @@
+import 'package:depi_task_3/manager/cubit/is_grid_view_cubit.dart';
 import 'package:depi_task_3/widgets/button_build_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FeatureButton extends StatefulWidget {
   const FeatureButton({super.key});
@@ -9,7 +11,7 @@ class FeatureButton extends StatefulWidget {
 }
 
 class _FeatureButtonState extends State<FeatureButton> {
-  bool isGerd = false;
+  bool isGerd = true;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -17,6 +19,7 @@ class _FeatureButtonState extends State<FeatureButton> {
         setState(() {
           isGerd = !isGerd;
         });
+        BlocProvider.of<IsGridViewCubit>(context).isGridView(isGerd);
       },
       child: Container(
         height: 50,

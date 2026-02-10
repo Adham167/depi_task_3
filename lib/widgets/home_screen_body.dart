@@ -1,8 +1,11 @@
+import 'package:depi_task_3/manager/cubit/is_grid_view_cubit.dart';
 import 'package:depi_task_3/widgets/feature_button.dart';
 import 'package:depi_task_3/widgets/food_carousel.dart';
 import 'package:depi_task_3/widgets/product_grid_view.dart';
+import 'package:depi_task_3/widgets/product_list_view.dart';
 import 'package:depi_task_3/widgets/search_field_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeScreenBody extends StatelessWidget {
   const HomeScreenBody({super.key});
@@ -31,10 +34,17 @@ class HomeScreenBody extends StatelessWidget {
               ],
             ),
           ),
-          ProductGridView(),
+          BlocBuilder<IsGridViewCubit, IsGridViewState>(
+            builder: (context, state) {
+              if (state is IsGridViewGrid) {
+                return ProductGridView();
+              } else {
+                return ProductListView();
+              }
+            },
+          ),
         ],
       ),
     );
   }
 }
-

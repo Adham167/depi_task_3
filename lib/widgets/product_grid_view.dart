@@ -4,19 +4,19 @@ import 'package:flutter/material.dart';
 
 class ProductGridView extends StatelessWidget {
   const ProductGridView({super.key});
-  final List<ProductModel> productList = const [
+  static final List<ProductModel> productList = const [
     ProductModel(
       image: "assets/images/img_1.jpg",
       title: "Special Offer",
       description: "Fresh sandwitch for your wife if you love her !!",
     ),
     ProductModel(
-      image: "assets/images/img_1.jpg",
+      image: "assets/images/img_2.jpg",
       title: "New Big Mac",
       description: "Fresh sandwitch for your wife if you love her !!",
     ),
     ProductModel(
-      image: "assets/images/img_1.jpg",
+      image: "assets/images/img_3.jpg",
       title: "New Burger Combo",
       description: "Fresh sandwitch for your wife if you love her !!",
     ),
@@ -26,12 +26,12 @@ class ProductGridView extends StatelessWidget {
       description: "Fresh sandwitch for your wife if you love her !!",
     ),
     ProductModel(
-      image: "assets/images/img_1.jpg",
+      image: "assets/images/img_2.jpg",
       title: "New Big Mac",
       description: "Fresh sandwitch for your wife if you love her !!",
     ),
     ProductModel(
-      image: "assets/images/img_1.jpg",
+      image: "assets/images/img_3.jpg",
       title: "New Burger Combo",
       description: "Fresh sandwitch for your wife if you love her !!",
     ),
@@ -41,7 +41,7 @@ class ProductGridView extends StatelessWidget {
       description: "Fresh sandwitch for your wife if you love her !!",
     ),
     ProductModel(
-      image: "assets/images/img_1.jpg",
+      image: "assets/images/img_2.jpg",
       title: "New Big Mac",
       description: "Fresh sandwitch for your wife if you love her !!",
     ),
