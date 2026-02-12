@@ -1,4 +1,5 @@
 import 'package:depi_task_3/models/product_model.dart';
+import 'package:depi_task_3/widgets/product_details_body.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetails extends StatelessWidget {
@@ -6,6 +7,10 @@ class ProductDetails extends StatelessWidget {
   final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+              backgroundColor: Color(0xFFFAFAFA),
+
+      body: ProductDetailsBody(productModel: productModel),
+    );
   }
 }

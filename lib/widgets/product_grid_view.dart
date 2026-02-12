@@ -4,46 +4,54 @@ import 'package:flutter/material.dart';
 
 class ProductGridView extends StatelessWidget {
   const ProductGridView({super.key});
-  static final List<ProductModel> productList = const [
+  static final List<ProductModel> productList = [
     ProductModel(
       image: "assets/images/img_1.jpg",
       title: "Special Offer",
       description: "Fresh sandwitch for your wife if you love her !!",
+      price: 200,
     ),
     ProductModel(
       image: "assets/images/img_2.jpg",
       title: "New Big Mac",
       description: "Fresh sandwitch for your wife if you love her !!",
+      price: 230,
+    ),
+    ProductModel(
+      image: "assets/images/img_3.jpg",
+      title: "New Burger Combo",
+      price: 180,
+      description: "Fresh sandwitch for your wife if you love her !!",
+    ),
+    ProductModel(
+      image: "assets/images/img_1.jpg",
+      title: "Special Offer",
+      description: "Fresh sandwitch for your wife if you love her !!",
+      price: 360,
+    ),
+    ProductModel(
+      image: "assets/images/img_2.jpg",
+      title: "New Big Mac",
+      description: "Fresh sandwitch for your wife if you love her !!",
+      price: 200,
     ),
     ProductModel(
       image: "assets/images/img_3.jpg",
       title: "New Burger Combo",
       description: "Fresh sandwitch for your wife if you love her !!",
+      price: 400,
     ),
     ProductModel(
       image: "assets/images/img_1.jpg",
       title: "Special Offer",
       description: "Fresh sandwitch for your wife if you love her !!",
+      price: 250,
     ),
     ProductModel(
       image: "assets/images/img_2.jpg",
       title: "New Big Mac",
       description: "Fresh sandwitch for your wife if you love her !!",
-    ),
-    ProductModel(
-      image: "assets/images/img_3.jpg",
-      title: "New Burger Combo",
-      description: "Fresh sandwitch for your wife if you love her !!",
-    ),
-    ProductModel(
-      image: "assets/images/img_1.jpg",
-      title: "Special Offer",
-      description: "Fresh sandwitch for your wife if you love her !!",
-    ),
-    ProductModel(
-      image: "assets/images/img_2.jpg",
-      title: "New Big Mac",
-      description: "Fresh sandwitch for your wife if you love her !!",
+      price: 300,
     ),
   ];
   @override
